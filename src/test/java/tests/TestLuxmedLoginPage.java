@@ -4,6 +4,7 @@ import org.testng.annotations.Test;
 import pages.LuxmedLoginPage;
 
 public class TestLuxmedLoginPage extends BaseTest {
+
     @Test (priority = 0)
     public void invalidLoginTest_InvalidUserNameInvalidPassword () {
 
