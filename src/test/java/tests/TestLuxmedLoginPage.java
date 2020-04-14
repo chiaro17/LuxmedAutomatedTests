@@ -15,4 +15,16 @@ public class TestLuxmedLoginPage extends BaseTest {
                 .loginToLuxmed("dada", "11223344")
                 .verifyErrorLoginToolTip("Nieprawidłowy login lub hasło.");
     }
+
+    @Test (enabled = false)
+    public void invalidLoginTest_CorrectNameInvalidPassword () {
+
+        //*************PAGE INSTANTIONS*************
+        LuxmedLoginPage loginPage = new LuxmedLoginPage(driver);
+
+        //*************PAGE METHODS********************
+        loginPage.goToLuxmedLoginPage()
+                .loginToLuxmed("chiaro17", "11223344")
+                .verifyErrorLoginToolTip("Nieprawidłowy login lub hasło.");
+    }
 }
