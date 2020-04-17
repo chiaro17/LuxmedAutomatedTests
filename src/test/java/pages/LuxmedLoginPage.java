@@ -23,7 +23,7 @@ public class LuxmedLoginPage extends BasePage {
 
     //*********Page Methods*********
 
-    //Go to Homepage
+    //Go to LoginPage
     public LuxmedLoginPage goToLuxmedLoginPage (){
         driver.get(baseURL);
         return this;
