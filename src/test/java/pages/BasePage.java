@@ -27,19 +27,19 @@ public class BasePage {
         driver.findElement(elementBy).click();
     }
 
-    //Write Text
+    //Write Text Method
     public void writeText (By elementBy, String text) {
         waitForDisplay(elementBy);
         driver.findElement(elementBy).sendKeys(text);
     }
 
-    //Read Text
+    //Read Text Method
     public String readText (By elementBy) {
         waitForDisplay(elementBy);
         return driver.findElement(elementBy).getText();
     }
 
-    //Assert
+    //Assert Method
     public void assertEquals (By elementBy, String expectedText) {
         waitForDisplay(elementBy);
         Assert.assertEquals(readText(elementBy), expectedText);

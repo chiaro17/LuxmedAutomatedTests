@@ -5,7 +5,7 @@ import pages.LuxmedPage;
 
 public class TestLuxmedPage extends BaseTest {
 
-    @Test (priority = 0)
+    @Test ()
     public void changeLanguageToEnglishTest(){
 
         //*************PAGE INSTANTIONS*************
@@ -21,4 +21,5 @@ public class TestLuxmedPage extends BaseTest {
         }
 
     }
+
 }
